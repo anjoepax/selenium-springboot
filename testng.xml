@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Practice Test Suite">
-    <test name="Practice Test">
+<suite name="Practice Test Suite" parallel="tests" thread-count="6">
+    <test name="Practice Test 1">
         <classes>
-            <class name="com.ajmspring.org.test.GoogleTest"/>
+            <class name="com.ajmspring.org.test.Google1Test"/>
         </classes>
-    </test> <!-- Test -->
-</suite> <!-- Suite -->
+    </test>
+    <test name="Practice Test 2">
+        <classes>
+            <class name="com.ajmspring.org.test.Google2Test"/>
+        </classes>
+    </test>
+</suite>

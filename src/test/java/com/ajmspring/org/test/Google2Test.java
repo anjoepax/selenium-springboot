@@ -6,9 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import java.io.IOException;
 
-public class GoogleTest extends SpringBaseTestNgTest {
+public class Google2Test extends SpringBaseTestNgTest {
 
     @Autowired
     private GooglePage googlePage;
@@ -21,8 +22,7 @@ public class GoogleTest extends SpringBaseTestNgTest {
     public void googleTest() throws IOException {
         this.googlePage.goTo();
         Assert.assertTrue(this.googlePage.isAt());
-
-        this.googlePage.getSearchComponent().search("Spring Boot");
+        this.googlePage.getSearchComponent().search("environment ");
         Assert.assertTrue(this.googlePage.getSearchResult().isAt());
         Assert.assertTrue(this.googlePage.getSearchResult().getCount() > 2);
         this.screenshotUtil.takeScreenshot("google-screenshot.png");
