@@ -1,0 +1,12 @@
+package com.ajmspring.org;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class AjmSpringApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(AjmSpringApplication.class, args);
+	}
+}
