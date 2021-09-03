@@ -11,4 +11,9 @@
             <class name="com.ajmspring.org.test.Google2Test"/>
         </classes>
     </test>
+    <test name="Practice Test 3">
+        <classes>
+            <class name="com.ajmspring.org.test.Google1Test"/>
+        </classes>
+    </test>
 </suite>
