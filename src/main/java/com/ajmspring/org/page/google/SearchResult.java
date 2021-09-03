@@ -1,13 +1,12 @@
 package com.ajmspring.org.page.google;
 
+import com.ajmspring.org.annotations.PageFragment;
 import com.ajmspring.org.page.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.springframework.stereotype.Component;
-
 import java.util.List;
 
-@Component
+@PageFragment
 public class SearchResult extends BasePage {
 
     @FindBy(xpath = "//cite")

@@ -1,11 +1,12 @@
 package com.ajmspring.org.page.google;
 
+import com.ajmspring.org.annotations.Page;
 import com.ajmspring.org.page.BasePage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
-@Component
+
+@Page
 public class GooglePage extends BasePage {
 
     @Autowired
@@ -33,6 +34,10 @@ public class GooglePage extends BasePage {
     @Override
     public boolean isAt() {
         return this.searchComponent.isAt();
+    }
+
+    public void quitDriver() {
+        this.driver.quit();
     }
 }
 

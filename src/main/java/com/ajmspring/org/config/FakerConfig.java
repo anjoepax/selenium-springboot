@@ -1,12 +1,10 @@
 package com.ajmspring.org.config;
 
+import com.ajmspring.org.annotations.LazyConfiguration;
 import com.github.javafaker.Faker;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Lazy;
 
-@Lazy
-@Configuration
+@LazyConfiguration
 public class FakerConfig {
 
     @Bean

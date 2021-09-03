@@ -1,13 +1,13 @@
 package com.ajmspring.org.page.google;
 
+import com.ajmspring.org.annotations.PageFragment;
 import com.ajmspring.org.page.BasePage;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.springframework.stereotype.Component;
 import java.util.List;
 
-@Component
+@PageFragment
 public class SearchComponent extends BasePage {
 
     @FindBy(name = "q")

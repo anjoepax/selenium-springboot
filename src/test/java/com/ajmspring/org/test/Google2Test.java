@@ -1,7 +1,8 @@
 package com.ajmspring.org.test;
 
+import com.ajmspring.org.annotations.LazyAutowired;
 import com.ajmspring.org.page.google.GooglePage;
-import com.ajmspring.org.util.ScreenShotUtil;
+import com.ajmspring.org.service.ScreenshotService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.testng.Assert;
@@ -11,12 +12,11 @@ import java.io.IOException;
 
 public class Google2Test extends SpringBaseTestNgTest {
 
-    @Autowired
+    @LazyAutowired
     private GooglePage googlePage;
 
-    @Lazy
-    @Autowired
-    private ScreenShotUtil screenshotUtil;
+    @LazyAutowired
+    private ScreenshotService screenshotUtil;
 
     @Test
     public void googleTest() throws IOException {
@@ -25,7 +25,8 @@ public class Google2Test extends SpringBaseTestNgTest {
         this.googlePage.getSearchComponent().search("environment ");
         Assert.assertTrue(this.googlePage.getSearchResult().isAt());
         Assert.assertTrue(this.googlePage.getSearchResult().getCount() > 2);
-        this.screenshotUtil.takeScreenshot("google-screenshot.png");
+        this.screenshotUtil.takeScreenshot();
+        this.googlePage.quitDriver();
     }
 }
 

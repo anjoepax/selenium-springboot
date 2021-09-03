@@ -8,10 +8,10 @@
 		<version>2.5.4</version>
 		<relativePath/>
 	</parent>
-	<groupId>com.ajm-spring.com</groupId>
-	<artifactId>ajm-spring</artifactId>
+	<groupId>org.selenium-springboot.com</groupId>
+	<artifactId>selenium-springboot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ajm-spring</name>
+	<name>SeleniumSpringBoot</name>
 	<description>Sprint boot practice</description>
 	<properties>
 		<java.version>11</java.version>
@@ -66,6 +66,9 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.22.2</version>
 				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>
