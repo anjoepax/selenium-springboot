@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class AjmSpringApplicationTests {
 
 	@Autowired
 	private Faker faker;
 
-	@Test
+	//@Test
 	void contextLoads() {
 		System.out.println(faker.name().firstName());
 	}

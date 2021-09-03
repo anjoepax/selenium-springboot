@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice Test Suite">
+    <test name="Practice Test">
+        <classes>
+            <class name="com.ajmspring.org.test.GoogleTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
