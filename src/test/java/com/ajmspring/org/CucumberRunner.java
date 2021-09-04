@@ -12,6 +12,7 @@ import org.testng.annotations.DataProvider;
         tags = {"@regression"},
         plugin = {
                 "pretty",
+                "io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm",
                 "html:screenshots"
         }
 )
