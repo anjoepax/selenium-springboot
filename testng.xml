@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Practice Test Suite" parallel="tests" thread-count="6">
-    <test name="Practice Test 1">
+<suite name="Practice Test Suite" parallel="none" thread-count="0">
+    <!--<test name="Practice Test 1">
         <classes>
             <class name="com.ajmspring.org.test.Google1Test"/>
         </classes>
@@ -14,6 +14,13 @@
     <test name="Practice Test 3">
         <classes>
             <class name="com.ajmspring.org.test.Google1Test"/>
+        </classes>
+    </test>-->
+    <test name="Practice Test 4">
+        <parameter name="dobFrom" value="1995-01-01"/>
+        <parameter name="dobTo" value="1997-01-01"/>
+        <classes>
+            <class name="com.ajmspring.org.visa.UserVisaTest"/>
         </classes>
     </test>
 </suite>
