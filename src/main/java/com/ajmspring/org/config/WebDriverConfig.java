@@ -36,4 +36,14 @@ public class WebDriverConfig {
         WebDriverManager.chromedriver().setup();
         return new ChromeDriver();
     }
+
+//    @ThreadScopeBean
+//    @ConditionalOnMissingBean
+//    public WebDriver chromeDriver() {
+//        WebDriverManager.chromedriver().setup();
+//        WebDriver driver = new ChromeDriver();
+//        Runtime.getRuntime().addShutdownHook(new Thread(driver::quit));
+//        return driver;
+//    }
 }
+
